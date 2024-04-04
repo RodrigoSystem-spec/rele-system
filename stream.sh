@@ -24,4 +24,4 @@ case $dia in
   ;;
 esac
 
-ffmpeg -v quiet -rtsp_transport tcp -i "rtsp://admin:Transito@192.168.1.108:554/cam/realmonitor?channel=1&subtype=0" -c copy -an "/home/pi/R-System/Videos/$diaact/video_$(date +"%Y%m%d%H%M%S").mp4"
+ffmpeg -v quiet -rtsp_transport tcp -i "rtsp://user:pass@ip:puerto/cam/realmonitor?channel=1&subtype=0" -c copy -an "/home/pi/R-System/Videos/$diaact/video_$(date +"%Y%m%d%H%M%S").mp4"
